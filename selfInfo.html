@@ -12,6 +12,25 @@
 	.pagination-style{
 		text-align:center;
 	}
+	.info-style{
+		padding-top:3px;
+		padding-left:10px;
+		padding-bottom:3px;
+	}
+	.answer{
+		padding-top:10px;
+		padding-left:10px;
+		padding-bottom:3px;
+	}
+	.question-title{
+		font-size:18px;
+	}
+	.answer-title{
+		font-weight:bold;
+	}
+	.answer-content{
+		padding-left:20px;
+	}
 	</style>
 </head>
 <body>
@@ -64,8 +83,24 @@
         </div>
     </div>
     
+    <section class="container">
+		<div class="panel panel-primary">
+  			<div class="panel-heading">
+        		<h3 class="panel-title">个人信息：</h3>
+        	</div>
+            <div class="info-style">
+            	我的积分：&nbsp;100
+            </div>
+            <div class="info-style">
+            	我的等级：&nbsp;Lv3
+            </div>
+            <div class="info-style">
+            	<a href="#">修改密码</a>&nbsp;&nbsp;&nbsp;<a href="#">修改密保问题</a>
+            </div>
+         </div>
+     </section>
 <section class="container">
-	<div class="panel panel-success">
+	<div class="panel panel-primary">
   		<div class="panel-heading">
         	<h3 class="panel-title">我的问题：</h3>
         </div>
@@ -75,7 +110,6 @@
       				<tr>
          				<th>问题名称</th>
          				<th>标签</th>
-                    	<th>提问人</th>
                     	<th>悬赏积分</th>
          				<th>回答数</th>
                     	<th>浏览次数</th>
@@ -85,7 +119,6 @@
             		<tr>
                 		<td><a href="#">C++怎么写Hello world?</a></td>
                     	<td><span class="label label-default">C++</span></td>
-                    	<td><a href="#">浮云寡人</a></td>
                     	<td>0</td>
                     	<td>3</td>
                     	<td>1000</td>
@@ -93,7 +126,6 @@
                 	<tr>
                 		<td><a href="#">JAVA和C++哪个牛逼？</a></td>
                     	<td><span class="label label-default">Java</span> <span class="label label-default">C++</span></td>
-                    	<td><a href="#">WXPPt</a></td>
                     	<td>0</td>
                     	<td>0</td>
                     	<td>5</td>
@@ -101,7 +133,6 @@
                		<tr>
                 		<td><a href="#">Test3</a></td>
                     	<td><span class="label label-default">C++</span></td>
-                    	<td><a href="#">浮云寡人</a></td>
                     	<td>0</td>
                     	<td>3</td>
                     	<td>1000</td>
@@ -109,7 +140,6 @@
                 	<tr>
                 		<td><a href="#">Test4</a></td>
                     	<td><span class="label label-default">C++</span></td>
-                    	<td><a href="#">浮云寡人</a></td>
                     	<td>0</td>
                     	<td>3</td>
                     	<td>1000</td>
@@ -117,7 +147,6 @@
                 	<tr>
                 		<td><a href="#">Test5</a></td>
                     	<td><span class="label label-default">C++</span></td>
-                    	<td><a href="#">浮云寡人</a></td>
                     	<td>0</td>
                     	<td>3</td>
                     	<td>1000</td>
@@ -137,6 +166,35 @@
    	 			<li><a href="#">&raquo;</a></li>
   			</ul>
     	</div>
+     </div>
+     
+     <div class="panel panel-primary">
+  		<div class="panel-heading">
+        	<h3 class="panel-title">我的回答：</h3>
+        </div>
+        <div class="answer">
+        	<div class="question-title">
+            	<a href="#">Java怎么写hello world?</a>
+            </div>
+            <div class="answer-title">
+            	我的回答：
+            </div>
+            <div class="answer-content">
+            	<p>代码如下图：</p>
+                <p><img src="image/helloworld.jpg"></p>
+            </div>
+        </div>
+        <div class="answer">
+        	<div class="question-title">
+            	<a href="#">大作业好多TAT</a>
+            </div>
+            <div class="answer-title">
+            	我的回答：
+            </div>
+            <div class="answer-content">
+            	<p>是的TAT</p>
+            </div>
+        </div>
      </div>
   </section>
 </body>
